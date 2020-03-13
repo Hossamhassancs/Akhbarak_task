@@ -60,6 +60,7 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.1)
+    coderay (1.1.2)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     database_cleaner (1.8.3)
@@ -98,6 +99,9 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
     puma (4.3.3)
       nio4r (~> 2.0)
     rack (2.2.2)
@@ -184,6 +188,8 @@ DEPENDENCIES
   faker
   listen (>= 3.0.5, < 3.2)
   mysql2 (>= 0.4.4)
+  nokogiri
+  pry
   puma (~> 4.1)
   rails (~> 6.0.2, >= 6.0.2.1)
   rspec-rails (~> 3.5)

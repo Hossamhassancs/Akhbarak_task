@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2020_03_12_135128) do
   create_table "articles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "title"
     t.string "image_url"
-    t.string "url"
+    t.text "url", size: :long
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
