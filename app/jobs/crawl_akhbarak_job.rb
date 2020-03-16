@@ -12,7 +12,6 @@ class CrawlAkhbarakJob < ApplicationJob
     links.each_with_index do |l,i|             
        Article.create!(title: titles[i], url: "https://akhbarak.net"+links[i], image_url: "hhtt" )
     end
-    sleep 2
     
    end
 end
